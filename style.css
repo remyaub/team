@@ -5,126 +5,87 @@
 }
 
 body {
-	width: 1440px;
-	height: 1490px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+main {
+	max-width: 1440px;
+	min-height: 100%;
 	margin: auto;
+}
+
+.container {
+	margin: 110px 240px 156px 240px;
+	display: grid;
 }
 
 .top-content {
 	display: flex;
-	width: 70%;
-	margin: auto;
-	padding-top: 110px;
+	flex-direction: row;
 	justify-content: space-between;
 }
 
 .title {
 	font-family: "PT Serif";
-	font-size: 36px;
+	font-size: 16px;
+	font-weight: 700;
+	width: 278px;
+	height: 47px;
 }
 
-.text-content h2 {
-	font-family: "Poppins";
+.text-content {
+	width: 439px;
 	font-size: 18px;
-	font-weight: 700;
+	font-family: "Poppins";
 }
 
 .text-content p {
-	font-family: "Poppins";
-	font-size: 18px;
-	font-weight: 400;
 	margin-top: 10px;
-	width: 440px;
 }
 
 .profil-pics-grid {
-	display: flex;
-	justify-content: space-between;
-	width: 70%;
-	margin: auto;
-	flex-direction: row;
-	margin-top: 96px;
-	flex-flow: row wrap;
-}
-
-.profil-bloc1 {
+	display: grid;
+	grid-template-columns: repeat(3, 238px);
+	grid-template-rows: repeat(auto-fit, 341px);
+	gap: 175px 93px;
+	margin-top: 173px;
 	position: relative;
 }
 
-.profil-bloc2,
-.profil-bloc3,
-.profil-bloc4,
-.profil-bloc6 {
-	position: relative;
-	margin-top: 132px;
-}
-
-.profil-bloc5 {
-	position: relative;
-}
-
-.profil-pics-grid img {
-	height: 341px;
+img {
 	width: 238px;
+	height: 341px;
+	
 }
 
 .profil-pics-grid span {
-	font-family: "PT Serif";
-	font-size: 12px;
-	margin-left: 10px;
+	position: absolute;
 	writing-mode: vertical-rl;
 	text-orientation: mixed;
-	position: absolute;
-	top: 0px;
+	font-size: 12px;
+	margin-left: 10px;
 }
 
 .profil-pics-grid p {
-	font-family: "Poppins";
 	font-size: 18px;
 	font-weight: 600;
+	font-family: "Poppins";
+	margin-top: 15px;
+}
+.bloc2 {
+	margin-top: 100px;
+}
+
+.bloc5 {
+	margin-top: 126px;
 }
 
 footer {
-	display: flex;
-	width: 100%;
-	justify-content: space-around;
-	position: relative;
+	text-align: center;
+	padding-top:109px ;
+	padding-bottom: 30px;
+	font-family: "PT Serif";
 }
 
-.footer p {
-	font-family: "Poppins";
-	margin-top: 138px;
-	margin-bottom: 10px;
-	align-items: center;
-	top: 100%;
-}
-
-@media screen and (max-width: 1200px) {
-	.top-content {
-		display: block;
-	}
-
-	.text-content h2 {
-		margin-top: 38px;
-	}
-
-	.text-content p {
-		font-size: 14px;
-	}
-
-	.profil-pics-grid img {
-		height: 220px;
-		width: 140px;
-	}
-}
-
-@media screen and (max-width: 750px) {
-
-	.profil-bloc6 {
-		position: relative;
-		left: 152%;
-		bottom: 30%;
-		margin-bottom: 100px;
-	}
-
-}
